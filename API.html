@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="app.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta del Clima</title>
+    <link rel="stylesheet" href="styless.css"> <!-- Enlaza tu archivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta del Clima</h1>
+        <div id="resultado"><h3>AVISO IMPORTATNE SELECCIONAR LA CIUDAD</h3></div>
+        <form id="weatherForm" class="mr-10" action="#" method="post">
+            
+                <label for="city">Ciudad:</label>
+                <input type="text" id="city" name="city" required>
+                
+            <select id="pais">
+                <option disabled selected value="">Selecione el pais</option>
+                <option value="AR">Argentina</option>
+                <option value="CO">Colombia</option>
+                <option value="CR">Costa Rica</option>
+                <option value="ES">España</option>
+                <option value="US">Estados Unidos</option>
+                <option value="MX">Mexico</option>
+                <option value="PE">Peru</option>    
+                
+            </select>
+
+            <input type="submit" value="consultando clima" id="boton">
+        </form>
+        
+
+        <div id="weatherResult"></div>
+    </div>
+
+     
+</body>
+</html>
